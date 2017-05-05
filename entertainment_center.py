@@ -3,7 +3,20 @@ import media
 
 """File contains movie proflies for fresh_tomatoes site"""
 
-# Create movie profiles by assigning the titles to instances of the class "Movie", located in the "media" file.
+# Section 1.0:
+
+# Create movie profiles by assigning the titles to instances of the
+# class "Movie", located in the "media" file.
+
+# Movie instances should be added below, using the following format:
+
+# <movie_name> = media.Movie(<movie_title_string>,
+#                            <description_string>,
+#                            <movie_poster_image_url>,
+#                            <youtube_trailer_url>)
+
+# DON'T FORGET TO ADD <movie_name> TO THE "movies" LIST LOCATED IN "Section 2.0"
+
 
 fort_tilden = media.Movie("Fort Tilden",
                           "A brutal Clueless for millenials",
@@ -45,10 +58,12 @@ entrapment = media.Movie("Entrapment",
                          "https://upload.wikimedia.org/wikipedia/en/thumb/8/89/Entrapment_film.jpg/215px-Entrapment_film.jpg" ,
                          "https://www.youtube.com/watch?v=71qhx1LlHAY" )
 
+# Section 2.0
 
-# Create a list of the "Movie" instances, to be used in the "open_movies_page" function of the "fresh_tomatoes" site
+# Create a list of the "Movie" instances, to be used in the "open_movies_page" function of the "fresh_tomatoes.py" site file
 
 movies = [fort_tilden, royal_tenenbaums, dogville, clueless, tammy, victoria, kedi, anomolisa, entrapment]
 
+# Section 3.0
 # Open movie profiles in browser by calling "open_movies_page" function on "movies" list
 fresh_tomatoes.open_movies_page(movies)
